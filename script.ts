@@ -1,6 +1,7 @@
-
 type employees = Array<number>;
+
 let staffIds: employees = [1, 2, 3];
+
 interface Employee {
 	id: number;
 	name: string;
@@ -37,8 +38,8 @@ function checkEmployment(employee): string {
 		} else {
 			console.log("false");
 			return
-		}
-	}
+		} 
+	} 
 }
 
 checkEmployment(employee3);
