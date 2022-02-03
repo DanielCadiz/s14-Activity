@@ -7,24 +7,40 @@ interface Employee {
 	position: string;
 	address: string;
 }
-const employee: Employee = {
+const employee1: Employee = {
 	id: 1,
 	name: "Dan",
 	position: "trainee",
 	address: "PH"
 }
-console.log(employee);
+const employee2: Employee = {
+	id: 3,
+	name: "Steph",
+	position: "trainee",
+	address: "PH"
+}
+const employee3: Employee = {
+	id: 5,
+	name: "Cadz",
+	position: "trainee",
+	address: "PH"
+}
+console.log(staffIds.length);
 function checkEmployment(employee): string {
 	console.log('Checking if employee credentials are valid:')
 	for(let i = 0; i <= staffIds.length-1; i++){
+		console.log(i);
 		if(employee.id == staffIds[i]){
-			return true.toString();
+			console.log("true");
+			console.log(`Welcome ${employee.name}. You are clocked in. Enjoy your day!`);
+			return
 		} else {
-			return false.toString();
+			console.log("false");
+			return
 		}
 	}
 }
 
-checkEmployment(employee);
+checkEmployment(employee3);
 
 
